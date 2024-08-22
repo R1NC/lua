@@ -40,11 +40,7 @@ set(LUA_SOURCES
         lzio.c
 )
 
-if(IOS)
 add_library(lua STATIC ${LUA_SOURCES})
-else()
-add_library(lua SHARED ${LUA_SOURCES})
-endif()
 
 set_target_properties(
         lua
